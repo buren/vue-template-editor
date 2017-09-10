@@ -25,6 +25,10 @@ Hi buren. You've logged in 3 times.
 
 :warning: For some reason the anything enclosed in `<>` will be ignored in the template.
 
+__Screenshot__
+
+![Form Screenshot](/screenshot.png)
+
 ## Getting started
 
 ```

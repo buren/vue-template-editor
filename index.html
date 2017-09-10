@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Template editor</title>
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="/vue.js"></script>
+    <script src="/string-format.js"></script>
+  </head>
+  <body>
+
+    <div id="template-app">
+      <div class="editor-view">
+        <div class="editor">
+          <editable :content="template" @update="template_update"></editable>
+        </div>
+
+        <div class="compiled-template">
+          <div v-html="compiled_template"></div>
+        </div>
+      </div>
+
+      <p>
+        <strong>Valid keys:</strong> {{ valid_data_keys }}
+      </p>
+
+      <p>
+        <strong>Total length:</strong> {{ total_length }}
+      </p>
+
+
+      <strong>Data: </strong>
+      <editable :content="input_data" @update="input_data_update"></editable>
+    </div>
+
+    <script src="/app.js" charset="utf-8"></script>
+
+  </body>
+</html>
